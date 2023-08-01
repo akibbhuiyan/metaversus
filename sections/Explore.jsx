@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-wrap-multilines */
+/* eslint-disable import/order */
 /* eslint-disable quotes */
 
 "use client";

@@ -4,7 +4,13 @@
 
 import { motion } from "framer-motion";
 import styles from "../styles";
-import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+import {
+  fadeIn,
+  slideIn,
+  staggerContainer,
+  textVariant,
+} from "../utils/motion";
+import { socials } from "../constants";
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -26,6 +32,23 @@ const Hero = () => (
           <h1 className={styles.heroHeading}>MA</h1>
           <div className={styles.heroDText} />
           <h1 className={styles.heroHeading}>ness</h1>
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", "tween", 0.25, 1)}
+          initial="hidden"
+          whileInView="show"
+          className="lg:block md:hidden hidden absolute right-0 w-[90px]top-[50%] "
+        >
+          <div className="flex gap-[30px] rotate-[-90deg]">
+            {socials.map((social) => (
+              <img
+                key={social.name}
+                src={social.url}
+                alt={social.name}
+                className="w-[24px] h-[24px] object-contain cursor-pointer"
+              />
+            ))}
+          </div>
         </motion.div>
       </div>
       <motion.div
