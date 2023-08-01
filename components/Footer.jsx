@@ -1,4 +1,7 @@
+/* eslint-disable quotes */
+
 "use client";
+
 import { motion } from "framer-motion";
 import styles from "../styles";
 import { socials } from "../constants";
@@ -17,7 +20,10 @@ const Footer = () => (
         <h4 className="font-bold md:text-[64px] text-[44px] text-white">
           Enter the Metaverse
         </h4>
-        <button className="flex items-center h-fit py-4 px-6 bg-[#25618b] rounded-[32px] gap-[12px]">
+        <button
+          className="flex items-center h-fit py-4 px-6 bg-[#25618b] rounded-[32px] gap-[12px]"
+          type="button"
+        >
           <img
             src="/headset.svg"
             alt="Headset"

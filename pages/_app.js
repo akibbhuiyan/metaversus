@@ -1,3 +1,5 @@
+/* eslint-disable quotes */
+
 import Head from "next/head";
 
 import "../styles/globals.css";

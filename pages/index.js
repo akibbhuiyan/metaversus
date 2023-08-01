@@ -1,3 +1,5 @@
+/* eslint-disable quotes */
+
 import { Footer, Navbar } from "../components";
 import {
   About,
